@@ -23,7 +23,6 @@ function App() {
         <AddLogModal />
         <EditLogModal />
         <AddTechModal />
-        <TechListModal />
         <Logs />
       </div>
     </Fragment>
