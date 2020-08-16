@@ -18,7 +18,7 @@ function App() {
     M.AutoInit();
   });
   return (
-    <Provider store={store}>
+    <Provider>
       <Fragment>
         <SearchBar />
         <div className="container">
