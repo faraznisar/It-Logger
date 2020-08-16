@@ -6,7 +6,7 @@ import LogItem from "./LogItem";
 import Preloader from "../layout/Preloader";
 import { getLogs } from "../../actions/logActions";
 
-const Logs = ({ log: { logs, loading }, getLogs }) => {
+const Logs = ({ log: { logs, loading } }) => {
   // const [logs, setLogs] = useState([]);
 
   // const [loading, setLoading] = useState(false);
@@ -25,7 +25,7 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
   //   setLoading(false);
   // };
 
-  if (loading || logs === null) {
+  if (loading) {
     return <Preloader />;
   }
   return (
@@ -45,10 +45,8 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
 const mapStateToProps = (state) => ({
   log: state.log,
 });
-
 Logs.propTypes = {
   log: PropTypes.object.isRequired,
-  getLogs: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, { getLogs })(Logs);

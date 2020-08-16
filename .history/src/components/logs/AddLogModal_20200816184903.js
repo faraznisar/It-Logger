@@ -17,15 +17,8 @@ const AddLogModal = ({ addLogs }) => {
       });
     } else {
       console.log(message, tech, attention);
-      const newLog = {
-        message,
-        attention,
-        tech,
-        date: new Date(),
-      };
-      addLogs(newLog);
-      M.toast({ html: `Log added by ${tech}` });
-      //Clear Fields
+      //      Clear Fields
+      addLogs(message, attention, tech);
       setMessage("");
       setTech("");
       setAttention(false);
@@ -104,4 +97,7 @@ AddLogModal.propTypes = {
   addLogs: PropTypes.func.isRequired,
 };
 
+// const mapStateToProps = (state) => ({
+//   log: state.log,
+// });
 export default connect(null, { addLogs })(AddLogModal);

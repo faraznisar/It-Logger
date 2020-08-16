@@ -16,16 +16,8 @@ const AddLogModal = ({ addLogs }) => {
         html: "Please enter a message and tech",
       });
     } else {
-      console.log(message, tech, attention);
-      const newLog = {
-        message,
-        attention,
-        tech,
-        date: new Date(),
-      };
-      addLogs(newLog);
-      M.toast({ html: `Log added by ${tech}` });
-      //Clear Fields
+      addLogs(message, attention, tech);
+      //      Clear Fields
       setMessage("");
       setTech("");
       setAttention(false);

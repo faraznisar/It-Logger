@@ -16,7 +16,6 @@ const AddLogModal = ({ addLogs }) => {
         html: "Please enter a message and tech",
       });
     } else {
-      console.log(message, tech, attention);
       const newLog = {
         message,
         attention,
