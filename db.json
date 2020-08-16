@@ -1,13 +1,6 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed the RAM for Server 1112, issue fixed",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2020-08-16T14:37:37.716Z"
-    },
-    {
       "message": "Server DIMM failed",
       "attention": true,
       "tech": "Sam Smith",
@@ -17,24 +10,9 @@
   ],
   "techs": [
     {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
-    {
-      "id": 2,
       "firstName": "Sam",
-      "lastName": "Smith"
-    },
-    {
-      "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wilson"
-    },
-    {
-      "firstName": "Faraz",
-      "lastName": "Shah",
-      "id": 4
+      "lastName": "Wilson",
+      "id": 1
     }
   ]
 }
